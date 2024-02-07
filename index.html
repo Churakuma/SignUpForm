@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="sidebar background__image">
+        <!-- <img class="background__image" src="./Assets/harley-davidson-uRuPYB0P8to-unsplash.jpg"> -->
+        </div>
+        <form class="sign__up__container" action="#" method="post">
+            <div class="prompt__text__container">
+                <p>
+                    This is not a real online service! You know you need something<br>
+                     like this in your life to help you realize your deepest dreams.<br>
+                     Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <div class="input__container">
+                <fieldset class="user__details name">
+                    <label for="first__name">First Name</label>
+                    <input type="text" id="first__name" name="first__name">
+                    <label for="last__name">Last Name</label>
+                    <input type="text" id="last__name" name="last__name">
+                </fieldset>
+                
+                <fieldset class="user__details contact__details">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone__number">Phone Number</label>
+                    <input type="tel" id="phone__number" name="phone__number">
+                </fieldset>
+
+                <fieldset class="user__details password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <label for="confirm__password">Confirm Password</label>
+                    <input type="password" id="confirm__password" name="confirm__password">
+                </fieldset>
+            </div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a>Log in</a></p>
+        </form>
+        <script src="script.js"></script> 
+    </div>
+</body>
+</html>
