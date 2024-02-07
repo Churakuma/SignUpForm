@@ -16,6 +16,7 @@
     /* Colors */
     --error: red;
     --leaf-green: #596D48;
+    --background-primary: #f9fafb;
 }
 
 /* --------------------  */
@@ -33,6 +34,7 @@
 
 /* Reset margins */
 body,
+html,
 h1,
 h2,
 h3,
@@ -57,6 +59,10 @@ fieldset {
     font-weight: bold;
 }
 
+.light__emphasis {
+    font-weight: 500;
+}
+
 .flex {
     display: flex;
 }
@@ -74,11 +80,9 @@ fieldset {
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 
-/* Input styles */
-/* .form__input {
-    
-} */
-
+/* Background */
+.background__primary { background-color: var(--background-primary); }
+.background__secondary {  background-color: white; }
 
 .content {
     width: 100vw;
@@ -91,4 +95,28 @@ fieldset {
     background-size: cover;
     width: 30rem;
     height: 100%;
+}
+
+.input__container {
+    box-shadow: 0px 15px 10px -15px;
+    z-index: 1;
+    margin: 0px 0px 32px 0px;
+}
+
+.sign__up__container {
+    width: 100%;
+}
+
+.submit__button {
+    background-color: var(--leaf-green);
+    border: none;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px;
+    color: white;
+    padding: 8px 32px;
+}
+
+a {
+    color: var(--leaf-green);
+    font-weight: bold;
 }
