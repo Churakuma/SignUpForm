@@ -9,6 +9,9 @@
 <body>
     <div class="content ff-system">
         <div class="sidebar background__image">
+            <div class="title__container flex">
+                <h1 class="title fs-750">Wheel World</h1>
+            </div>
         </div>
         <form class="sign__up__container background__primary" action="#" method="post">
             <div class="prompt__text__container fs-400 bold">
@@ -36,8 +39,8 @@
                 
                 <fieldset class="user__details contact__details uppercase flex">
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]" required>
                     </div>
                     <div>
                         <label for="phone__number">Phone Number</label>
@@ -48,18 +51,25 @@
 
                 <fieldset class="user__details password uppercase flex">
                     <div>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                    <div class="requirement__container">
+                        <p class="requirement error hidden" id="password__error">Passwords must match</p>
                     </div>
                     <div>
-                        <label for="confirm__password">Confirm Password</label>
-                        <input type="password" id="confirm__password" name="confirm__password">
+                        <label for="confirm__password">*Confirm Password</label>
+                        <input type="password" id="confirm__password" name="confirm__password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </div>
                 </fieldset>
             </div>
-            <button class="submit__button" type="submit">Create Account</button>
+            <button class="submit__button" type="submit" id="submit">Create Account</button>
             <p id="login__prompt">Already have an account? <a>Log in</a></p>
         </form>
+
+        <div id="message">
+
+        </div>
         <script src="script.js"></script> 
     </div>
 </body>
