@@ -67,6 +67,10 @@ fieldset {
     display: flex;
 }
 
+.block {
+    display: block;
+}
+
 /* Typography */
 .ff-serif { font-family: var(--font-secondary); }
 .ff-system { font-family: var(--font-primary); }
@@ -90,17 +94,34 @@ fieldset {
     display: flex;
 }
 
+
+/* Specifics */
+
+a {
+    color: var(--leaf-green);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 16rem;
+}
+
 .background__image {
     background-image: url('./Assets/harley-davidson-uRuPYB0P8to-unsplash.jpg');
     background-size: cover;
-    width: 30rem;
+    width: 60rem;
     height: 100%;
 }
 
 .input__container {
     box-shadow: 0px 15px 10px -15px;
     z-index: 1;
-    margin: 0px 0px 32px 0px;
+    padding-bottom: 1.5rem;
 }
 
 .sign__up__container {
@@ -114,9 +135,27 @@ fieldset {
     box-shadow: 1px 1px 5px;
     color: white;
     padding: 8px 32px;
+    margin: 1.5rem 0rem 1.5rem 2rem;
+    cursor: pointer;
 }
 
-a {
-    color: var(--leaf-green);
-    font-weight: bold;
+.user__details {
+    padding: 0 0 2rem 2rem;
+    gap: 6rem;
+}
+
+#prompt__text__primary {
+    padding: 8rem 0rem 2rem 2rem;
+}
+
+#prompt__text__secondary {
+    padding: 0rem 0rem 2rem 2rem;
+}
+
+h2 {
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+#login__prompt {
+    padding: 0 0 0 2rem;
 }
